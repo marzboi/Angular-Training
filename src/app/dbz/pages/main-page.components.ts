@@ -12,5 +12,9 @@ export class MainPageComponent {
     { name: 'Mike', power: 9999 },
   ];
 
-  constructor() {}
+  onNewCharacter(character: Character): void {
+    console.log(character);
+    const characterToAdd = { ...character };
+    this.characters.push(characterToAdd);
+  }
 }
