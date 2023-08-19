@@ -5,15 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './pages/main-page.components';
 import { ListComponent } from './components/list/list.component';
 import { AddCharacterComponent } from './components/add-character/add-character.component';
-import { TestComponentComponent } from './components/test-component/test-component.component';
 
 @NgModule({
-  declarations: [
-    MainPageComponent,
-    ListComponent,
-    AddCharacterComponent,
-    TestComponentComponent,
-  ],
+  declarations: [MainPageComponent, ListComponent, AddCharacterComponent],
   imports: [CommonModule, FormsModule],
   exports: [MainPageComponent],
 })
